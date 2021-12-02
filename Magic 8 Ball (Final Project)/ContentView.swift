@@ -7,7 +7,7 @@
 // !! I used code from Roll the dice to create the flip !! //
 import SwiftUI
 struct ContentView: View {
-    @State private var randomValue = 0
+    @State private var picker = 0
     @State private var rotation = 0.0
     @State private var enterQuestion = ""
     @State private var replyToQuestion = ""
@@ -18,10 +18,11 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .padding()
                 Spacer()
-                Image("image\(randomValue)")
+                Image("image\(picker)")
                     .frame(width: 250, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .rotationEffect(.degrees(rotation))
                     .rotation3DEffect(.degrees(rotation), axis: (x: 8, y: 5, z: 0))
+                    .padding()
                     .padding()
                     .onTapGesture {
                         yesOrNo(times: 2)
@@ -34,9 +35,10 @@ struct ContentView: View {
                     replyToQuestion = ""
                 }
                 .padding()
-                .padding()
                 TextField("Enter Question Here", text: $enterQuestion)
                     .multilineTextAlignment(.center)
+                    .padding()
+                    .padding()
                 Text("\(replyToQuestion)")
                 // delete this if doesnt work
                 Spacer()
@@ -48,11 +50,11 @@ struct ContentView: View {
     func yesOrNo (times:Int) {
         if times > 0 {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                randomValue = Int.random(in: 1...2)
+                picker = Int.random(in: 1...2)
                 yesOrNo(times: times - 1)
             }
         }
-        if randomValue == 1 {
+        if picker == 1 {
             replyToQuestion = "No"
             // if it doesnt work put it enterQuestion
         } else {

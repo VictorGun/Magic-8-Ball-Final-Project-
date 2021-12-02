@@ -13,6 +13,8 @@ struct Instructions: View {
         VStack {
             Text(phrase)
                 .font(.title)
+                .fontWeight(.heavy)
+                .padding()
                 .padding()
             
             
