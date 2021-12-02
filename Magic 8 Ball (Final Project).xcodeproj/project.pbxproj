@@ -11,6 +11,7 @@
 		3FBDB1D62746B56A00D68203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDB1D52746B56A00D68203 /* ContentView.swift */; };
 		3FBDB1D82746B57000D68203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDB1D72746B57000D68203 /* Assets.xcassets */; };
 		3FBDB1DB2746B57000D68203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDB1DA2746B57000D68203 /* Preview Assets.xcassets */; };
+		3FBDB1E32746B5C100D68203 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDB1E22746B5C100D68203 /* Instructions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3FBDB1D72746B57000D68203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBDB1DA2746B57000D68203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FBDB1DC2746B57000D68203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBDB1E22746B5C100D68203 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				3FBDB1D32746B56A00D68203 /* Magic_8_Ball__Final_Project_App.swift */,
 				3FBDB1D52746B56A00D68203 /* ContentView.swift */,
+				3FBDB1E22746B5C100D68203 /* Instructions.swift */,
 				3FBDB1D72746B57000D68203 /* Assets.xcassets */,
 				3FBDB1DC2746B57000D68203 /* Info.plist */,
 				3FBDB1D92746B57000D68203 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBDB1D62746B56A00D68203 /* ContentView.swift in Sources */,
+				3FBDB1E32746B5C100D68203 /* Instructions.swift in Sources */,
 				3FBDB1D42746B56A00D68203 /* Magic_8_Ball__Final_Project_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
